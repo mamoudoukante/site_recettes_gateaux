@@ -9,9 +9,9 @@ body {
 
 div.contenu {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0 8px 20px 8px;
+    /*min-width: 350px;*/
     box-shadow:  0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
     }
@@ -97,7 +97,7 @@ img.info {
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -110,13 +110,7 @@ div.colonne h2 {
 }
 
 div.colonne1 {
-    
     display: inline-block;
-    margin-right: 10%;
-}
-
-div.colonne2 {
-    float: right;
 }
 
 div.ingredien p {
@@ -155,3 +149,44 @@ table.preparation tr {
     height: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin: 60px 10% 80px 10%;
+        padding: 0 30px 30px 30px;
+        min-width: 350px;
+        }
+
+    div.colonne {
+        width: 45%;
+    }
+
+    div.colonne1 {
+        margin-right: 10%;
+    }
+
+    div.colonne2 {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    table.info { 
+    height: 50px;
+    }
+
+    table.info th{
+    font-size: 14px;
+    }
+
+    table.info td{
+    font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+        }   
+}
